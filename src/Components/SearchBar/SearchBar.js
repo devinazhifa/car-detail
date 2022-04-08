@@ -19,37 +19,37 @@ const SearchBar = (props) => {
     <div>
         <form id="search-movie" onSubmit={handleSubmit(onSubmit)}>
             <div className={style.search_container}>
-                <div className={style.search_group}>
-                    <label for="tipe_driver">Tipe Driver</label>
-                    <select name="tipe_driver" id="tipe_driver">
-                        <option value="">Pilih Tipe Driver</option>
-                        <option value="">Dengan Sopir</option>
-                        <option value="">Tanpa Sopir (Lepas Kunci)</option>
-                    </select>
+                <div className={style.dropdown}>
+                    <h6 className={style.subtitle}>Tipe Driver</h6>
+                    <div className={style.dropbtn}>Pilih Tipe Driver <img className={style.icon} src="/images/chevron-down.png"/> </div>
+                    <div className={style.dropdown_content}>
+                        <div className={style.dropdown_item}>Dengan Sopir</div>
+                        <div className={style.dropdown_item}>Tanpa Sopir (Lepas Kunci)</div>
+                    </div>
                 </div>
-                <div className={style.search_group}>
-                    <label for="tanggal">Tanggal</label>
-                    <input type="date" name="tanggal" id="tanggal" />
+                <div className={style.dropdown}>
+                    <h6 className={style.subtitle}>Tanggal</h6>
+                    <input type="date" name="tanggal" id="tanggal" className={style.dropbtn}/> 
                 </div>
-                <div className={style.search_group}>
-                    <label for="waktu">Waktu Jemput/Ambil</label>
-                    <select name="waktu" id="waktu">
-                        <option value="">Pilih Waktu</option>
-                        <option value="">08.00 WIB</option>
-                        <option value="">09.00 WIB</option>
-                        <option value="">10.00 WIB</option>
-                        <option value="">11.00 WIB</option>
-                        <option value="">12.00 WIB</option>
-                    </select>
+                <div className={style.dropdown}>
+                    <h6 className={style.subtitle}>Waktu Jemput/Ambil</h6>
+                    <div className={style.dropbtn}>Pilih Waktu <img className={style.icon} src="/images/chevron-down.png"/> </div>
+                    <div className={style.dropdown_content}>
+                        <div className={style.dropdown_item}>08.00   WIB</div>
+                        <div className={style.dropdown_item}>09.00   WIB</div>
+                        <div className={style.dropdown_item}>10.00   WIB</div>
+                        <div className={style.dropdown_item}>11.00   WIB</div>
+                        <div className={style.dropdown_item}>12.00   WIB</div>
+                    </div>
                 </div>
-                <div className={style.search_group}>
-                    <label for="penumpang">Jumlah Penumpang (Optional)</label>
-                    <select name="penumpang" id="penumpang">
-                        <option value="">Jumlah Penumpang</option>
-                        <option value="">3</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                    </select>
+                <div className={style.dropdown}>
+                    <h6 className={style.subtitle}>Jumlah Penumpang (Optional)</h6>
+                    <div className={style.dropbtn}>Jumlah Penumpang <img className={style.icon} src="/images/chevron-down.png"/> </div>
+                    <div className={style.dropdown_content}>
+                        <div className={style.dropdown_item}>3</div>
+                        <div className={style.dropdown_item}>5</div>
+                        <div className={style.dropdown_item}>7</div>
+                    </div>
                 </div>
                 <div className={style.submit}>
                     <button type="submit">Search</button>

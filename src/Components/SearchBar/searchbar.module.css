@@ -1,3 +1,7 @@
+*{
+    font-family: Helvetica;
+}
+
 .search_container {
     padding: 8px;
     border: solid 5px #ffffff;
@@ -6,10 +10,110 @@
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     margin-bottom: 50px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     padding: 20px;
 }
+
+.subtitle{
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.dropbtn {
+    width: 200px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown_item {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+}
+
+.dropdown_content .dropdown_item:hover {
+    background: #C9E7CA;
+    color: #5CB85F;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.icon{
+    float: right;
+    margin-top: 4px;
+}
+
+  
+
+/* .dropdown{
+    width: 10rem;
+    font-size: 12px;
+    position: relative;
+}
+
+.dropdown:hover .dropdown_list{
+    opacity: 1;
+    visibility: visible;
+    padding: 9px;
+    line-height: 20px;
+    cursor: pointer;
+    background-color: #198754;
+}
+
+.dropdown_select{
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #D0D0D0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.dropdown_list{
+    border-radius: 4px;
+    background-color: white;
+    padding: 8px;
+    font-size: 12px;
+    position: absolute;
+    visibility: hidden;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+} */
+
 
 .search_group {
     flex-grow: 1;
@@ -30,7 +134,7 @@
     line-height: 40px;
     font-size: 12px;
 }
-.search_group input[type="date"] {
+.dropbtn [type="date"] {
     height: 40px;
     width: 100%;
     font-size: 12px;
