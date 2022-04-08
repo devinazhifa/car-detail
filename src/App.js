@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Header from './Components/Header/Header';
 import Home from './Components/Pages/Home';
 import Car from './Components/Pages/Car';
 

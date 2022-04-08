@@ -1,6 +1,5 @@
 import React from 'react';
 import { set, useForm } from 'react-hook-form'
-import { Link } from 'react-router-dom'
 
 import style from './searchbar.module.css'
 
