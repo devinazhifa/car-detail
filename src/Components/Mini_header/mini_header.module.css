@@ -1,0 +1,15 @@
+*{
+    font-family: Helvetica;
+}
+
+.navbar{
+    background-image: url(/public/images/bg.png);
+    height: 160px;
+}
+
+.container{
+    position: relative;
+}
+.nav_link{
+    margin-right: 20px;
+}

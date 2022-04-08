@@ -1,0 +1,41 @@
+*{
+    font-family: Helvetica;
+}
+
+.navbar{
+    background: #F1F3FF;
+}
+
+.container{
+    position: relative;
+}
+.nav_link{
+    margin-right: 20px;
+}
+
+.hero {
+    background-image: url(/public/images/bg.png);
+    background-size: cover;
+    height: 460px;
+    overflow: hidden;
+}
+.hero_image {
+    width: 100%;
+    transform: translateX(23%);
+    margin-top: 140px;
+}
+
+.hero_title{
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+.hero_subtitle{
+    font-size: 14px;
+    line-height: 20px;
+    width: 468px;
+    height: 60px;
+    margin-bottom: 20px;
+}

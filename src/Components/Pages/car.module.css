@@ -1,0 +1,104 @@
+.wrapper{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.detail {
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 60px;
+}
+.detail_car {
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 65px;
+}
+
+.title{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.subtitle{
+    font-size: 14px;
+    color: black;
+}
+
+.text{
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #8A8A8A;
+}
+
+.button{
+    background: #198754;
+    width: 275px;
+    height: 48px;
+    border: 0px;
+    border-radius: 4px;
+    line-height: 40px;
+    padding: 0 16px;
+    color: #ffffff;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.picture{
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 310px;
+    height: 200px;
+}
+
+.title{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.description{
+    font-size: 14px;
+    padding: 8px;
+    padding-bottom: 30px;
+}
+
+.icon{
+    padding-right: 5px;
+    padding-left: 20px;
+}
+
+.total{
+    font-size: 14px;
+    float: left;
+    padding-left: 30px;
+}
+
+.price{
+    font-size: 14px;
+    float: right;
+    font-weight: 700;
+    padding-right: 30px;
+}
+
+.button_car{
+    background: #198754;
+    width: 325px;
+    height: 48px;
+    border: 0px;
+    border-radius: 4px;
+    line-height: 40px;
+    padding: 0 16px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-left: 30px;
+}

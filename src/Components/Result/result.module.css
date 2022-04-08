@@ -1,0 +1,51 @@
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-top: 20px;
+}
+
+.image{
+    margin: 20px;
+}
+
+.title{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.price{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.text{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.icon{
+    padding-right: 10px;
+}
+
+.description{
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.button{
+    background: #198754;
+    width: 275px;
+    height: 48px;
+    border: 0px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 16px;
+    color: #ffffff;
+    margin-top: 20px;
+}
