@@ -6,7 +6,7 @@ import style from './searchbar.module.css'
 const SearchBar = (props) => {
     const { handleSubmit } = useForm()
     const onSubmit = (formData) =>{
-        fetch('https://rent-cars-api.herokuapp.com/admin/car')
+        fetch('https://625d73e74c36c753577540cb.mockapi.io/fejs2/api/c5-cars')
         .then(response => {
             return response.json()
         })

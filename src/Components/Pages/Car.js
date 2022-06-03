@@ -3,23 +3,40 @@ import { useParams } from 'react-router-dom'
 
 import Mini_header from '../Mini_header/Mini_header'
 import Footer from '../Footer/Footer'
+import axios from 'axios'
 
 import style from './car.module.css'
 
 const Car = () => {
+    const [car, setCar] = useState({})
+    const params = useParams()
 
-    const param = useParams()
-    const [car,setCar] = useState(null)
+    useEffect(() =>{
+      axios.get(`https://625d73e74c36c753577540cb.mockapi.io/fejs2/api/c5-cars/${params.id}`)
+      .then( response => {
+        if ( response.data !== null ){
+          setCar({...response.data})
+        } else {
+          return Promise.reject({ errorMessage: 'Product not available'})
+        }
+      })
+      .catch( error => {
+        setCar({...error})
+      })
+    }, [])
 
-    useEffect(() => {
-        fetch(`https://rent-cars-api.herokuapp.com/admin/car/${param.id}`)
-        .then(response => {
-            return response.json()
-        })
-        .then(data => {
-            setCar({...data})
-        })
-    },[])
+    // const param = useParams()
+    // const [car,setCar] = useState(null)
+
+    // useEffect(() => {
+    //     fetch(`https://rent-cars-api.herokuapp.com/admin/car/${param.id}`)
+    //     .then(response => {
+    //         return response.json()
+    //     })
+    //     .then(data => {
+    //         setCar({...data})
+    //     })
+    // },[])
 
     return (
         <div>
@@ -61,7 +78,7 @@ const Car = () => {
             <div className="col-5">
                 <div className={style.detail_car}>
                     <img src={car.image} className={style.picture}/>
-                    <h6 className={style.title}>{`${car.name} / ${car.category}`}</h6>
+                    <h6 className={style.title}>{`${car.name}`}</h6>
                     <div className={style.description}>
                       <img src="/images/icon_users.png" className={style.icon}/>4 Orang 
                       <img src="/images/icon_setting.png" className={style.icon}/> Manual
